@@ -1,0 +1,16 @@
+galaxy_info:
+  role_name: ansible-role-demo-app
+  author: pgustafs@redhat.com
+  description: Simple role to install a simple web app from git repo.
+  company: Red Hat, Inc.
+  license: GPLv3
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+        - 7
+
+  galaxy_tags:
+    - rhnordics
+
+dependencies: []

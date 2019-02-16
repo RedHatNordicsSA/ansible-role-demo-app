@@ -1,0 +1,14 @@
+# role tasks
+- name: Install git
+  yum:
+    name: git
+    state: present
+
+- name: Install the application from repository
+  git:
+    repo: "{{ demo_app_repo }}"
+    version: "{{ demo_app_version }}"
+    dest: "{{ demo_app_install_dir }}"
+    force: true
+  notify:
+    - restart apache

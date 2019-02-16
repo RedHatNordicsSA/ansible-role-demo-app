@@ -1,0 +1,8 @@
+- name: converge
+  hosts: all
+  become: true
+  roles:
+    - role: ansible-role-apache
+    - role: ansible-role-php
+    - role: ansible-role-demo-app
+  post_tasks: []

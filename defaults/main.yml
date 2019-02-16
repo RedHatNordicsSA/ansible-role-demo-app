@@ -1,0 +1,4 @@
+# defaults file for ansible-role-demo-app
+demo_app_repo: https://github.com/pgustafs/rhforum-demo-app.git
+demo_app_version: 1.0
+demo_app_install_dir: /var/www/html
